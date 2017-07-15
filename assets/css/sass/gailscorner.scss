@@ -1,0 +1,345 @@
+$primary: #a72067;
+$secondary: #dfc86d;
+$primary-darkened: #840146;
+
+body {
+	// font-family: Fresca;
+	font-size: 1em;
+}
+
+h1,
+h2 {
+	// font-family: 'Lobster Two', cursive;
+	font-family: 'Philosopher', cursive;
+}
+
+h2,
+a {
+	color: $primary;
+}
+
+
+header {
+	background-color: $primary;
+	color: #fff;
+}
+
+section {
+	&:nth-child(odd) {
+		background-color: #f7f7f7;
+	}
+}
+
+nav {
+	background-color: $primary-darkened;
+	border-top: 1px solid #d43187;
+
+	&.woocommerce-breadcrumb {
+		background-color: transparent;
+		border: none;
+	}
+
+	.is-fullscreen-on-mobile {
+		background-color: $primary-darkened;
+
+		ul.sub-menu {
+			border-radius: 0;
+		}
+	}
+
+	.action-close-mobile-nav {
+		background-color: transparent;
+		color: $secondary;
+	}
+
+	&.woocommerce-pagination {
+		background-color: transparent;
+		border: none;
+	}
+
+}
+
+.nav {
+	// font-size: 1em;
+
+	li {
+
+		a {
+			color: #fff;
+		}
+
+	}
+
+	> li {
+
+		> ul.sub-menu {
+
+			li {
+
+				a:hover {
+					color: #fff;
+				}
+
+			}
+
+		}
+
+		a:hover {
+			background-color: $primary;
+			color: #fff;
+		}
+
+	}
+
+}
+
+#main-menu {
+	background-color: $primary-darkened;
+}
+
+.button {
+
+	&.is-purple {
+		background-color: $primary-darkened;
+		color: #fff;
+		border: none;
+
+		&.is-outlined {
+			color: $primary-darkened;
+			border-color: $primary-darkened;
+		}
+
+	}
+
+	&.is-gold {
+		background-color: $secondary;
+
+		&.is-outlined {
+			border: 2px solid $secondary;
+			color: $secondary;
+			background-color: transparent;
+
+			&:hover {
+				background-color: $secondary;
+				color: $primary-darkened;
+			}
+
+		}
+
+	}
+
+	&.view-more {
+		background-color: $primary-darkened;
+		width: 100%;
+		max-width: inherit;
+		color: #fff;
+	}
+
+	.cart-count {
+		background-color: #dfc86d;
+		color: $primary;
+	}
+
+}
+
+.field-wrap input[type="submit"],
+.field-wrap input[type="button"],
+.field-wrap button {
+	background-color: $primary;
+	color: #fff;
+	cursor: pointer;
+}
+
+.products {
+	// .button { }
+}
+
+#in-person-shopping-banner {
+	color: #fff;
+
+	h3 {
+		color: #fff;
+	}
+
+	p {
+		color: $secondary;
+	}
+
+}
+
+#summer-collection-banner {
+	color: #fff;
+
+	h3 {
+		color: #fff;
+	}
+
+}
+
+#white-party-banner {
+
+	h3 {
+		color: #fff;
+	}
+
+	.button {
+		border-color: #fff;
+		color: #fff;
+	}
+
+}
+
+/** Typography **/
+body {
+	color: #3b3d40;
+}
+
+/** Products **/
+.product {
+
+	span {
+
+		&.product-link a {
+			color: #3b3d40;
+		}
+
+	}
+
+}
+
+/** Footer **/
+footer {
+
+	.image-wrapper {
+		margin-bottom: 20px;
+	}
+
+	.nav {
+
+		&.second {
+
+			a {
+				color: #98999a;
+				text-transform: none;
+				font-weight: normal;
+				letter-spacing: normal;
+			}
+
+		}
+
+	}
+
+}
+
+/** Woocommerce **/
+body.woocommerce {
+	background-color: #f7f7f7;
+
+	.woocommerce-products-header {
+
+		h1 {
+			color: $primary;
+		}
+
+	}
+
+	.summary {
+
+		.product_title {
+			font-size: 22px;
+		}
+
+	}
+
+	.woocommerce.widget {
+
+		ul.product-categories {
+
+			> li {
+				border-bottom: 1px solid $secondary;
+			}
+
+		}
+
+		ul.children {
+			background-color: transparent;
+			padding: 0 0 10px;
+			// border-bottom: 1px solid $secondary;
+
+			a {
+				color: #666;
+				padding: 10px 20px;
+				display: block;
+				font-size: 14px;
+				// border-bottom: 1px solid $secondary;
+			}
+
+		}
+
+		> ul > li > a {
+			color: $primary;
+			// border-bottom: 1px solid $secondary;
+			border-bottom: none;
+			font-size: 14px;
+		}
+
+	}
+
+}
+
+.product span.product-title {
+	font-size: 18wpx;
+}
+
+#store-wrapper {
+	.woocommerce-products-header {
+		background-color: transparent;
+	}
+
+	ul.products li.product {
+		min-height: 413px;
+	}
+
+}
+
+#store-wrapper .products .wp-post-image {
+    max-width: 225px;
+    height: 300px;
+}
+
+.page {
+
+	#headline {
+		background-color: $primary;
+
+		h1 {
+			color: #fff;
+		}
+
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	#home-hero.banner {
+		background-size: contain;
+		max-height: 185px;
+	}
+
+	#store-wrapper {
+
+		ul.products li.product {
+			min-height: 350px;
+			min-width: 40%;
+		}
+
+	}
+
+	// .is-fullscreen-on-mobile {
+	// 	font-size: 30px;
+	// }
+
+}
+
+/** CUSTOM **/
